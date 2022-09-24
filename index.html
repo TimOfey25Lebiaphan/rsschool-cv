@@ -26,13 +26,14 @@
     <main>
         <p>
         <h2>About me </h2>
-        My name is Timafei and i like IT , because solving different tasks and working in command is very interesting
+        My name is Timafei and I like IT , because solving different tasks and working in command is very interesting
         for me.
         I am .NET / C # Developer . I graduated .NET / C # training in EPAM for 11 moths.
         I have good knowledge of T - SQL , MSSQL and basic knowledges of HTML / CSS.
         Also I've got practical skills in this programming languanges and in command work.
         I'm self - opened and it helps me to contact with other people.
-        I am very communicable and friendly = ) Hobbies I like to spend my freetime by riding a bike , reading books and
+        I am very communicable and friendly = ) 
+        I like to spend my freetime by riding a bike , reading books and
         playing board . and computer RPG games.
         In books i prefer unusual genres like fantasy , horror , alternative history and mystic.
         My favorite authors : Michael Bulgakov , Michael Dostoevstki , George Martin , John Tolkien , Hovard Lovecraft ,
@@ -53,17 +54,28 @@
             <li>Cisco Packet Tracer</li>
             <li>Enterprice Architech 15</li>
         </ul>
-        <h2>Code Example:</h2>
-
+        <h2>Code Fragment:</h2>
+<p>Task: You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.</p>
     <code>
         <pre>
-        public class CustomMath
-        {
-            public static int multiply(int a, int b) 
+            public class Kata
             {
-                return a * b;
+              public static string GetMiddle(string s)
+              {
+                if(s.Length <= 1)
+                {
+                  return s;  
+                }
+                else if(s.Length % 2 != 0)
+                {
+                    return s[s.Length / 2].ToString();
+                }
+                else
+                {
+                  return s[(s.Length / 2) - 1] + s[s.Length / 2].ToString();  
+                }
+              }
             }
-        }
         </pre>
     </code>
 
